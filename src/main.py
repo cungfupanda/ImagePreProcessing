@@ -19,11 +19,10 @@ def Process_Images(folder_path, resolution):
 
 
     ##Iterate the new directory looking for '.png' files
-    for root, dirs, files in os.walk(dest_directory):
+    for root, files in os.walk(dest_directory):
         for file in files:
             if file.endswith(".png"):
                 png_file = os.path.join(root, file)
-                img = cv2.imread(png_file)
 
                 IE = Image_Edit(png_file)
                 cropped_image = IE.Crop_Image(resolution)  

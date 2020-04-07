@@ -29,7 +29,7 @@ if __name__ == "__main__":
     image = r"/media/enda/750GB/1.Coding/1.Python-Dev/ImagePreProcessing/data/test-valeo-v5/valeo2-streets-high-sun/node-176156457592450-sample-0/batch-0/FV/color-images/color.0.png"
 
     IE = Image_Edit(image)
-    cropped_image = IE.Crop_Image([1280,966])   
+    cropped_image = IE.Crop_Image([1280,966])         
 
     cv2.imshow("cropped_image", cropped_image)
     cv2.waitKey(0)
