@@ -24,14 +24,9 @@ class Annotation_Parser(object):
             for json_object, object_data in data.items():
                 if json_object == "classes":
                     for class_name, details in object_data.items():
-                        if class_name == "House":
+                        if class_name == "Bicycle":
                             
-                            for elements in details[0]:    
-                                print(details[0])    
-                                print(elements)  
-
-                                
-
+                            for elements in details[0]:                                  
                                 x = details[1]['2d-bounding-rectangle']['x']
                                 y = details[1]['2d-bounding-rectangle']['y']
                                 w = details[1]['2d-bounding-rectangle']['width']
