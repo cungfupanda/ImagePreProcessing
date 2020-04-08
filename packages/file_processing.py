@@ -24,7 +24,7 @@ class File_Processing(object):
 if __name__ == "__main__":
     print("Main Function Executing")
 
-    source_directory = r'/media/enda/750GB/1.Coding/1.Python-Dev/ImagePreProcessing/data/test-valeo-v5'
+    source_directory = r'/media/enda/750GB/3.ImageData/test-valeo-v5'
     dest_directory = source_directory + '_cropped'
 
     FP = File_Processing(source_directory, dest_directory)
